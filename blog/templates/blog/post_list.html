@@ -6,6 +6,6 @@
     {{ post.published_date }}
      <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
      <p>{{ post.text|linebreaksbr }}</p>
-     <a href="{% url 'post_detail' pk=post.pk %}">{{ post.comment.count }}</a>
+     <a href="{% url 'post_detail' pk=post.pk %}">{{ post.comment.count }}件のコメント</a>
     {% endfor %}
 {% endblock content %}
